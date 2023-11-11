@@ -14,7 +14,7 @@ namespace CineBack.Datos
         private SqlConnection conexion;
         private HelperDao()
         {
-            conexion = new SqlConnection(@"");
+            conexion = new SqlConnection(Properties.Resources.CadenaConexion);
         }
         public static HelperDao ObtenerInstancia()
         {

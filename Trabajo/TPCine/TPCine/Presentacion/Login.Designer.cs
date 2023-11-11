@@ -30,6 +30,8 @@
         {
             btnIngresar = new Button();
             btnSalir = new Button();
+            txtEmail = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnIngresar
@@ -52,21 +54,43 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(135, 90);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(147, 23);
+            txtEmail.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(70, 93);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Email";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(416, 287);
+            Controls.Add(label1);
+            Controls.Add(txtEmail);
             Controls.Add(btnSalir);
             Controls.Add(btnIngresar);
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btnIngresar;
         private Button btnSalir;
+        private TextBox txtEmail;
+        private Label label1;
     }
 }
