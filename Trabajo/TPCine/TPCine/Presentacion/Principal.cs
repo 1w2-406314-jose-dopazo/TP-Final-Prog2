@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TPCine.Presentacion;
 
 namespace TPCine
 {
@@ -25,6 +26,13 @@ namespace TPCine
             {
                 this.Dispose();
             }
+        }
+
+        private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPeliculas p = new FrmPeliculas();
+            p.ShowDialog();
+            
         }
     }
 }

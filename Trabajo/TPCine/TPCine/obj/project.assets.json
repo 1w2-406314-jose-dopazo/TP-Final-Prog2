@@ -494,11 +494,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\TPCine.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\TPCine.csproj",
       "projectName": "TPCine",
-      "projectPath": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\TPCine.csproj",
+      "projectPath": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\TPCine.csproj",
       "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\obj\\",
+      "outputPath": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -519,8 +519,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj": {
-              "projectPath": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj"
+            "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj": {
+              "projectPath": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj"
             }
           }
         }

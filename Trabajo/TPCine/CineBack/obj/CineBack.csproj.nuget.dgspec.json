@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj": {}
+    "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj": {
+    "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj",
+        "projectPath": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\CineBack.csproj",
         "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\obj\\",
+        "outputPath": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

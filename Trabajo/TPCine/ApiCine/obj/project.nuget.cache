@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XMBCrcHp108xgsvnAqLM2uppayKj2kWwm7lX4MKP9C0rq3TmrM5ivq6N5k1E/xYVkqIdWEYsM7szguKUO0GKRg==",
+  "dgSpecHash": "745pAyVKaBSaQtRnMQDwJL/IgdRA8gpwuc+vuSnGvta0Rr8Ptopv45UldJyVAec4SJa/9hwXpwYfpC5YDOVKUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\ApiCine\\ApiCine.csproj",
+  "projectFilePath": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\ApiCine\\ApiCine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

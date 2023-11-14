@@ -36,6 +36,7 @@
             reportesToolStripMenuItem = new ToolStripMenuItem();
             acercaDeToolStripMenuItem = new ToolStripMenuItem();
             infoDeResponsablesToolStripMenuItem = new ToolStripMenuItem();
+            peliculasToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,12 +59,13 @@
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(180, 22);
+            salirToolStripMenuItem.Size = new Size(96, 22);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // soporteToolStripMenuItem
             // 
+            soporteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { peliculasToolStripMenuItem });
             soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
             soporteToolStripMenuItem.Size = new Size(60, 20);
             soporteToolStripMenuItem.Text = "Soporte";
@@ -93,6 +95,13 @@
             infoDeResponsablesToolStripMenuItem.Size = new Size(185, 22);
             infoDeResponsablesToolStripMenuItem.Text = "Info de Responsables";
             // 
+            // peliculasToolStripMenuItem
+            // 
+            peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
+            peliculasToolStripMenuItem.Size = new Size(180, 22);
+            peliculasToolStripMenuItem.Text = "Peliculas";
+            peliculasToolStripMenuItem.Click += peliculasToolStripMenuItem_Click;
+            // 
             // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -118,5 +127,6 @@
         private ToolStripMenuItem reportesToolStripMenuItem;
         private ToolStripMenuItem acercaDeToolStripMenuItem;
         private ToolStripMenuItem infoDeResponsablesToolStripMenuItem;
+        private ToolStripMenuItem peliculasToolStripMenuItem;
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f7nud0GM6oYIyOpCaW4MGk4iSwaXICMIFHGWNfXX9Xl0r75WuaLOr80FdPvsSInwMQfaBpeHBB3m0XLzgsUeXQ==",
+  "dgSpecHash": "ZsR+R/KQ2qtRMGR0SSH3eJtq6F0afqPQ2RoC0Kxn08SljFwp0S0UGovNbgEwxApDnORItkA/4kPBfsJNjlHg/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marti\\Source\\Repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\TPCine.csproj",
+  "projectFilePath": "C:\\Users\\marti\\source\\repos\\TP-Final-Prog2\\Trabajo\\TPCine\\TPCine\\TPCine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
