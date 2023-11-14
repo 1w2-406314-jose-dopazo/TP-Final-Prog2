@@ -36,49 +36,59 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(125, 137);
+            btnIngresar.BackColor = Color.FromArgb(13, 93, 143);
+            btnIngresar.Location = new Point(190, 241);
+            btnIngresar.Margin = new Padding(4);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(177, 23);
+            btnIngresar.Size = new Size(278, 33);
             btnIngresar.TabIndex = 0;
             btnIngresar.Text = "Ingresar";
-            btnIngresar.UseVisualStyleBackColor = true;
+            btnIngresar.UseVisualStyleBackColor = false;
             btnIngresar.Click += btnIngresar_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(178, 187);
+            btnSalir.BackColor = Color.FromArgb(13, 93, 143);
+            btnSalir.Location = new Point(270, 303);
+            btnSalir.Margin = new Padding(4);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(75, 23);
+            btnSalir.Size = new Size(118, 33);
             btnSalir.TabIndex = 1;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(135, 90);
+            txtEmail.Location = new Point(215, 183);
+            txtEmail.Margin = new Padding(4);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(147, 23);
+            txtEmail.Size = new Size(228, 29);
             txtEmail.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(70, 93);
+            label1.Location = new Point(108, 186);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(36, 15);
+            label1.Size = new Size(60, 22);
             label1.TabIndex = 3;
             label1.Text = "Email";
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(416, 287);
+            BackColor = Color.FromArgb(11, 43, 64);
+            ClientSize = new Size(653, 421);
             Controls.Add(label1);
             Controls.Add(txtEmail);
             Controls.Add(btnSalir);
             Controls.Add(btnIngresar);
+            Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = SystemColors.ButtonFace;
+            Margin = new Padding(4);
             Name = "Login";
             Text = "Login";
             Load += Login_Load;

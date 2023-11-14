@@ -29,7 +29,7 @@ namespace TPCine
             u.Email = txtEmail.Text;
             if (Validar())
             {
-                if (dao.Login(u)==1)
+                if (dao.Login(u) == 1)
                 {
                     Principal p = new Principal();
                     p.ShowDialog();
@@ -46,7 +46,7 @@ namespace TPCine
                     txtEmail.Clear();
                 }
             }
-          
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -73,10 +73,15 @@ namespace TPCine
         {
             if (string.IsNullOrEmpty(txtEmail.Text))
             {
-                MessageBox.Show("Debe Ingresar un email","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Debe Ingresar un email", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

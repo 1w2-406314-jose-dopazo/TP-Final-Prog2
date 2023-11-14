@@ -32,7 +32,13 @@ namespace TPCine
         {
             FrmPeliculas p = new FrmPeliculas();
             p.ShowDialog();
-            
+
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form FrmLabo = new FrmLabo();
+            FrmLabo.Show();
         }
     }
 }
