@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            ColId = new DataGridViewTextBoxColumn();
-            ColNom = new DataGridViewTextBoxColumn();
-            ColDesc = new DataGridViewTextBoxColumn();
-            ColDur = new DataGridViewTextBoxColumn();
-            ColEditar = new DataGridViewButtonColumn();
-            ColVer = new DataGridViewButtonColumn();
             btnBuscar = new Button();
             txtBuscar = new TextBox();
             label1 = new Label();
             btnSalir = new Button();
             btnMostrar = new Button();
             lbMostrar = new Label();
+            ColId = new DataGridViewTextBoxColumn();
+            ColNom = new DataGridViewTextBoxColumn();
+            ColDesc = new DataGridViewTextBoxColumn();
+            ColDur = new DataGridViewTextBoxColumn();
+            ColCl = new DataGridViewTextBoxColumn();
+            ColEditar = new DataGridViewButtonColumn();
+            ColVer = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -49,51 +50,14 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ColId, ColNom, ColDesc, ColDur, ColEditar, ColVer });
-            dataGridView1.Location = new Point(37, 182);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ColId, ColNom, ColDesc, ColDur, ColCl, ColEditar, ColVer });
+            dataGridView1.Location = new Point(12, 182);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(692, 208);
+            dataGridView1.Size = new Size(766, 208);
             dataGridView1.TabIndex = 0;
-            // 
-            // ColId
-            // 
-            ColId.HeaderText = "ID";
-            ColId.Name = "ColId";
-            ColId.ReadOnly = true;
-            ColId.Visible = false;
-            // 
-            // ColNom
-            // 
-            ColNom.HeaderText = "Nombre";
-            ColNom.Name = "ColNom";
-            ColNom.ReadOnly = true;
-            // 
-            // ColDesc
-            // 
-            ColDesc.HeaderText = "Descripcion";
-            ColDesc.Name = "ColDesc";
-            ColDesc.ReadOnly = true;
-            ColDesc.Width = 250;
-            // 
-            // ColDur
-            // 
-            ColDur.HeaderText = "Duracion";
-            ColDur.Name = "ColDur";
-            ColDur.ReadOnly = true;
-            // 
-            // ColEditar
-            // 
-            ColEditar.HeaderText = "Editar";
-            ColEditar.Name = "ColEditar";
-            ColEditar.ReadOnly = true;
-            // 
-            // ColVer
-            // 
-            ColVer.HeaderText = "Ver";
-            ColVer.Name = "ColVer";
-            ColVer.ReadOnly = true;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnBuscar
             // 
@@ -150,6 +114,54 @@
             lbMostrar.TabIndex = 6;
             lbMostrar.Text = "Mostrar Peliculas :";
             // 
+            // ColId
+            // 
+            ColId.HeaderText = "ID";
+            ColId.Name = "ColId";
+            ColId.ReadOnly = true;
+            ColId.Visible = false;
+            ColId.Width = 75;
+            // 
+            // ColNom
+            // 
+            ColNom.HeaderText = "Nombre";
+            ColNom.Name = "ColNom";
+            ColNom.ReadOnly = true;
+            // 
+            // ColDesc
+            // 
+            ColDesc.HeaderText = "Descripcion";
+            ColDesc.Name = "ColDesc";
+            ColDesc.ReadOnly = true;
+            ColDesc.Width = 300;
+            // 
+            // ColDur
+            // 
+            ColDur.HeaderText = "Duracion";
+            ColDur.Name = "ColDur";
+            ColDur.ReadOnly = true;
+            ColDur.Width = 75;
+            // 
+            // ColCl
+            // 
+            ColCl.HeaderText = "Clasificacion";
+            ColCl.Name = "ColCl";
+            ColCl.ReadOnly = true;
+            // 
+            // ColEditar
+            // 
+            ColEditar.HeaderText = "Editar";
+            ColEditar.Name = "ColEditar";
+            ColEditar.ReadOnly = true;
+            ColEditar.Width = 75;
+            // 
+            // ColVer
+            // 
+            ColVer.HeaderText = "Ver";
+            ColVer.Name = "ColVer";
+            ColVer.ReadOnly = true;
+            ColVer.Width = 75;
+            // 
             // FrmPeliculas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -183,6 +195,7 @@
         private DataGridViewTextBoxColumn ColNom;
         private DataGridViewTextBoxColumn ColDesc;
         private DataGridViewTextBoxColumn ColDur;
+        private DataGridViewTextBoxColumn ColCl;
         private DataGridViewButtonColumn ColEditar;
         private DataGridViewButtonColumn ColVer;
     }

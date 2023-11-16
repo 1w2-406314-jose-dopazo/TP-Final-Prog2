@@ -32,7 +32,13 @@ namespace TPCine
         {
             FrmPeliculas p = new FrmPeliculas();
             p.ShowDialog();
-            
+
+        }
+
+        private void aBMCPeliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMCPelis p = new ABMCPelis();
+            p.ShowDialog();
         }
     }
 }

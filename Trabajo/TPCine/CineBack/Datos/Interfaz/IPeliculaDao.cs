@@ -11,5 +11,6 @@ namespace CineBack.Datos.Interfaz
     {
         List<Pelicula> ObtenerPeliculas();
        List< Pelicula> ObtenerPorFiltro(List<Parametro>plist);
+        List<Clasificacion> ObtenerClasificacion();
     }
 }

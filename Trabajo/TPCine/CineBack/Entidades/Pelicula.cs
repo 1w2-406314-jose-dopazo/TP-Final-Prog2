@@ -13,13 +13,17 @@ namespace CineBack.Entidades
         public string Descripcion { get; set; }
         public int Duracion { get; set; }
         public Clasificacion Clasification { get; set; }
-        public Pelicula(int id,string nombre,string descripcion,int duracion)
+        public Pelicula(int id,string nombre,string descripcion,int duracion,Clasificacion cl)
         {
             Id = id;
             Nombre = nombre;
             Descripcion = descripcion;
             Duracion = duracion;
-           
+            Clasification = cl;
+        }
+        public override string ToString()
+        {
+            return Nombre;
         }
     }
 }

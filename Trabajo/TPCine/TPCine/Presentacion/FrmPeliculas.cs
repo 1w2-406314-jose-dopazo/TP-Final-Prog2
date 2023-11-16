@@ -36,8 +36,8 @@ namespace TPCine.Presentacion
             foreach (Pelicula p in lpeli)
             {
                 dataGridView1.Rows.Add(new object[] {p.Id,p.Nombre,
-                                                     p.Descripcion,p.Duracion,
-                                                     "Editar","Ver"});
+                                                     p.Descripcion,p.Duracion+" hs",
+                                                     p.Clasification.Clasification,"Editar","Ver"});
             }
         }
 
@@ -52,8 +52,13 @@ namespace TPCine.Presentacion
                 foreach (Pelicula p in lpeli)
                 {
                     dataGridView1.Rows.Add(new object[] {p.Id,p.Nombre,
-                                                     p.Descripcion,p.Duracion,
-                                                     "Editar","Ver"});
+                                                     p.Descripcion,p.Duracion+" hs",
+                                                    p.Clasification.Clasification,"Editar","Ver"});
+                }
+                if (dataGridView1.Rows == null)
+                {
+                    MessageBox.Show(" No se encontro la pelicula", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
 
@@ -74,6 +79,22 @@ namespace TPCine.Presentacion
             if (result == DialogResult.Yes)
             {
                 this.Dispose();
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.CurrentCell.ColumnIndex == 5)
+            {
+
+                int nro = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ColId"].Value);
+                string nom = Convert.ToString(dataGridView1.CurrentRow.Cells["ColNom"].Value);
+                string clas = Convert.ToString(dataGridView1.CurrentRow.Cells["ColCl"].Value);
+                ABMCPelis detalle = new ABMCPelis(nro, nom,clas);
+                detalle.Nro = nro;
+                detalle.Nom = nom;
+                detalle.Clas = clas;
+                detalle.ShowDialog();
             }
         }
     }

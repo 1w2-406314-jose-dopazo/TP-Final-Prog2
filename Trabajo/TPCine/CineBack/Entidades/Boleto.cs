@@ -8,5 +8,7 @@ namespace CineBack.Entidades
 {
     public class Boleto
     {
+        public int MyProperty { get; set; }
+
     }
 }

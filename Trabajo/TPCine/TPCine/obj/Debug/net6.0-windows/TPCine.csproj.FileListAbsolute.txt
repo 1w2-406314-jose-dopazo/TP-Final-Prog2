@@ -45,3 +45,5 @@ C:\Users\marti\Source\Repos\TP-Final-Prog2\Trabajo\TPCine\TPCine\bin\Debug\net6.
 C:\Users\marti\Source\Repos\TP-Final-Prog2\Trabajo\TPCine\TPCine\obj\Debug\net6.0-windows\TPCine.Presentacion.FrmLabo.resources
 C:\Users\marti\Source\Repos\TP-Final-Prog2\Trabajo\TPCine\TPCine\obj\Debug\net6.0-windows\TPCine.csproj.CopyComplete
 C:\Users\marti\source\repos\TP-Final-Prog2\Trabajo\TPCine\TPCine\obj\Debug\net6.0-windows\TPCine.Presentacion.FrmPeliculas.resources
+C:\Users\marti\source\repos\TP-Final-Prog2\Trabajo\TPCine\TPCine\obj\Debug\net6.0-windows\TPCine.Presentacion.ABMCPelis.resources
+C:\Users\marti\source\repos\TP-Final-Prog2\Trabajo\TPCine\TPCine\obj\Debug\net6.0-windows\TPCine.Presentacion.FrmBoleto.resources

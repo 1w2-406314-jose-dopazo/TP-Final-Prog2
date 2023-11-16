@@ -32,11 +32,12 @@
             archivoToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
             soporteToolStripMenuItem = new ToolStripMenuItem();
+            peliculasToolStripMenuItem = new ToolStripMenuItem();
             transaccionToolStripMenuItem = new ToolStripMenuItem();
             reportesToolStripMenuItem = new ToolStripMenuItem();
             acercaDeToolStripMenuItem = new ToolStripMenuItem();
             infoDeResponsablesToolStripMenuItem = new ToolStripMenuItem();
-            peliculasToolStripMenuItem = new ToolStripMenuItem();
+            aBMCPeliculasToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,10 +66,17 @@
             // 
             // soporteToolStripMenuItem
             // 
-            soporteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { peliculasToolStripMenuItem });
+            soporteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { peliculasToolStripMenuItem, aBMCPeliculasToolStripMenuItem });
             soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
             soporteToolStripMenuItem.Size = new Size(60, 20);
             soporteToolStripMenuItem.Text = "Soporte";
+            // 
+            // peliculasToolStripMenuItem
+            // 
+            peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
+            peliculasToolStripMenuItem.Size = new Size(180, 22);
+            peliculasToolStripMenuItem.Text = "Peliculas";
+            peliculasToolStripMenuItem.Click += peliculasToolStripMenuItem_Click;
             // 
             // transaccionToolStripMenuItem
             // 
@@ -95,12 +103,12 @@
             infoDeResponsablesToolStripMenuItem.Size = new Size(185, 22);
             infoDeResponsablesToolStripMenuItem.Text = "Info de Responsables";
             // 
-            // peliculasToolStripMenuItem
+            // aBMCPeliculasToolStripMenuItem
             // 
-            peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
-            peliculasToolStripMenuItem.Size = new Size(180, 22);
-            peliculasToolStripMenuItem.Text = "Peliculas";
-            peliculasToolStripMenuItem.Click += peliculasToolStripMenuItem_Click;
+            aBMCPeliculasToolStripMenuItem.Name = "aBMCPeliculasToolStripMenuItem";
+            aBMCPeliculasToolStripMenuItem.Size = new Size(180, 22);
+            aBMCPeliculasToolStripMenuItem.Text = "ABMCPeliculas";
+            aBMCPeliculasToolStripMenuItem.Click += aBMCPeliculasToolStripMenuItem_Click;
             // 
             // Principal
             // 
@@ -128,5 +136,6 @@
         private ToolStripMenuItem acercaDeToolStripMenuItem;
         private ToolStripMenuItem infoDeResponsablesToolStripMenuItem;
         private ToolStripMenuItem peliculasToolStripMenuItem;
+        private ToolStripMenuItem aBMCPeliculasToolStripMenuItem;
     }
 }
