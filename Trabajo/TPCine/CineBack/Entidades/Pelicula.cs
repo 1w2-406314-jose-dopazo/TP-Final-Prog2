@@ -13,6 +13,7 @@ namespace CineBack.Entidades
         public string Descripcion { get; set; }
         public int Duracion { get; set; }
         public Clasificacion Clasification { get; set; }
+        public decimal Valoracion { get; set; }
         public Pelicula(int id,string nombre,string descripcion,int duracion,Clasificacion cl)
         {
             Id = id;

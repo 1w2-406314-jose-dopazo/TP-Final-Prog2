@@ -17,7 +17,7 @@ namespace TPCine.Presentacion
         IPeliculaDao dao;
         public ABMCPelis()
         {
-            
+
         }
         public ABMCPelis(int Nro, string Nom, string clas)
         {
@@ -33,7 +33,7 @@ namespace TPCine.Presentacion
         private void ABMCPelis_Load(object sender, EventArgs e)
         {
 
-           // CargarClas();
+            // CargarClas();
         }
 
         private void CargarClas()
@@ -48,6 +48,31 @@ namespace TPCine.Presentacion
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Seguro que desea quitar la pelicula?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (dao.Borrar(Nro))
+                {
+                    MessageBox.Show("La pelicula se quitó exitosamente!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("La pelicula no se quitó", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Desea regresar?", "Saliendo", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
         }
 
         public int Nro { get; set; }
